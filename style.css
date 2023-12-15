@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;  
+ background-color: black;
+
+}
+#barradinavigazione{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+#logo{
+    height: 124px;
+    width: auto;
+    transition: transform 2.0s ease;
+    
+   
+}
+#box-menu{
+    display: flex;
+    align-items: center;
+}
+.menu{
+    position: relative;
+    margin-right: 41px;
+    list-style-type: none;
+}
+.text-menu{
+    text-decoration: none;
+    color: white;
+    font-family: fantasy;
+    
+}
+.menu::after{
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+.menu:hover::after{
+    width: 100%;
+    background: #ffffff;
+}
+#container{
+    display: flex;
+    
+}
+#titolo{
+    left: 314px;
+    position: relative;
+    color: white;
+    transform: translate(-200%);
+    transition: transform 2s ease;
+}
+
