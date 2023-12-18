@@ -4,6 +4,11 @@ body {
   background-color: black;
   overflow-x: hidden;
 }
+
+p {
+  color: white;
+}
+
 #barradinavigazione {
   display: flex;
   justify-content: space-between;
@@ -23,11 +28,13 @@ body {
   margin-right: 41px;
   list-style-type: none;
 }
+
 .text-menu {
   text-decoration: none;
   color: white;
   font-family: fantasy;
 }
+
 .menu::after {
   content: "";
   display: block;
@@ -37,26 +44,45 @@ body {
   background: transparent;
   transition: width 0.5s ease, background-color 0.5s ease;
 }
+
 .menu:hover::after {
   width: 100%;
   background: #ffffff;
 }
+
 #container {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
+
 #titolo {
   left: 314px;
-  position: relative;
+  position: absolute;
   color: white;
-  transform: translate(-200%);
+  transform: translate(-250%);
   transition: transform 2s ease;
 }
 
 #service {
+  position: absolute;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+#scorr {
+  width: 50%;
+}
+
+#descr {
+  color: red;
+}
+
+#service2 {
   display: flex;
   overflow-x: auto;
-  width: 100%;
+  width: 21.35%;
   height: auto;
 }
 
@@ -79,6 +105,34 @@ body {
   border-radius: 36px;
 }
 
-/*#siti {
-  height: 293px;
-}*/
+#about {
+  position: absolute;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 15%;
+}
+
+#info {
+  position: absolute;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#infoutili {
+  display: flex;
+  justify-content: center;
+}
+
+#map {
+  margin-left: 20px;
+}
+
+#prova {
+  color: white;
+}

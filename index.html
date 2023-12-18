@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
@@ -10,71 +10,114 @@
     <nav id="barradinavigazione">
       <img id="logo" src="logo separato 1.png" alt="" />
       <ul id="box-menu">
-        <li class="menu"><a class="text-menu" href="#">Home</a></li>
-        <li class="menu"><a class="text-menu" href="#servizi">Servizi</a></li>
-        <li class="menu"><a class="text-menu" href="#">Chi Siamo</a></li>
-        <li class="menu"><a class="text-menu" href="#">Informazioni</a></li>
+        <li class="menu">
+          <a class="text-menu" href="#" onclick="mostrahome()">Home</a>
+        </li>
+        <li class="menu">
+          <a class="text-menu" href="#" onclick="mostraserv()">Servizi</a>
+        </li>
+        <li class="menu">
+          <a class="text-menu" href="#" onclick="mostrachisiamo()">Chi Siamo</a>
+        </li>
+        <li class="menu">
+          <a class="text-menu" href="#" id="prova" onclick="mostrainfo()"
+            >Informazioni</a
+          >
+        </li>
       </ul>
     </nav>
     <div id="container">
-      <h1 id="titolo">Benvenvenuti nel mio sito</h1>
-      <div name="servizi" id="service">
-        <div id="box-service1">
-          <img src="consulenzainf.jpg" id="consinf" />
-          <button type="button" id="btn-1">SCOPRI DI PIU'</button>
-        </div>
-        <div id="box-service1">
-          <img
-            src="realizzazione-siti-web-alberto-pozzi-monza.jpg"
-            id="consinf"
-          />
-          <button type="button" id="btn-1">SCOPRI DI PIU'</button>
-        </div>
-        <div id="box-service1">
-          <img src="webdes.png" id="consinf" />
-          <button type="button" id="btn-1">SCOPRI DI PIU'</button>
-        </div>
-        <div id="box-service1">
-          <img src="consulenzainf.jpg" id="consinf" />
-          <button type="button" id="btn-1">SCOPRI DI PIU'</button>
-        </div>
-        <div id="box-service1">
-          <img src="consulenzainf.jpg" id="consinf" />
-          <button type="button" id="btn-1">SCOPRI DI PIU'</button>
-        </div>
-        <div id="box-service1">
-          <img src="consulenzainf.jpg" id="consinf" />
-          <button type="button" id="btn-1">SCOPRI DI PIU'</button>
-        </div>
-        <div id="box-service1">
-          <img src="consulenzainf.jpg" id="consinf" />
-          <button type="button" id="btn-1">SCOPRI DI PIU'</button>
-        </div>
-        <div id="box-service1">
-          <img src="consulenzainf.jpg" id="consinf" />
-          <button type="button" id="btn-1">SCOPRI DI PIU'</button>
-        </div>
-        <div id="box-service1">
-          <img src="consulenzainf.jpg" id="consinf" />
-          <button type="button" id="btn-1">SCOPRI DI PIU'</button>
-        </div>
-        <div id="box-service1">
-          <img src="consulenzainf.jpg" id="consinf" />
-          <button type="button" id="btn-1">SCOPRI DI PIU'</button>
-        </div>
-        <div id="box-service1">
-          <img src="consulenzainf.jpg" id="consinf" />
-          <button type="button" id="btn-1">SCOPRI DI PIU'</button>
-        </div>
-        <div id="box-service1">
-          <img src="consulenzainf.jpg" id="consinf" />
-          <button type="button" id="btn-1">SCOPRI DI PIU'</button>
+      <h1 id="titolo">Benvenuti nel mio sito</h1>
+      <div id="service">
+        <marquee
+          id="scorr"
+          behavior="slide"
+          direction="right"
+          scrolldelay="3"
+          scrollamount="0"
+          ><h1 id="descr">ECCO I NOSTRI SERVIZI:</h1></marquee
+        >
+        <div id="service2">
+          <div id="box-service1">
+            <img src="consulenzainf.jpg" id="consinf" />
+            <button type="button" id="btn-1">SCOPRI DI PIU'</button>
+          </div>
+          <div id="box-service1">
+            <img
+              src="realizzazione-siti-web-alberto-pozzi-monza.jpg"
+              id="consinf"
+            />
+            <button type="button" id="btn-1">SCOPRI DI PIU'</button>
+          </div>
+          <div id="box-service1">
+            <img src="webdes.png" id="consinf" />
+            <button type="button" id="btn-1">SCOPRI DI PIU'</button>
+          </div>
+          <div id="box-service1">
+            <img src="consulenzainf.jpg" id="consinf" />
+            <button type="button" id="btn-1">SCOPRI DI PIU'</button>
+          </div>
+          <div id="box-service1">
+            <img src="consulenzainf.jpg" id="consinf" />
+            <button type="button" id="btn-1">SCOPRI DI PIU'</button>
+          </div>
+          <div id="box-service1">
+            <img src="consulenzainf.jpg" id="consinf" />
+            <button type="button" id="btn-1">SCOPRI DI PIU'</button>
+          </div>
+          <div id="box-service1">
+            <img src="consulenzainf.jpg" id="consinf" />
+            <button type="button" id="btn-1">SCOPRI DI PIU'</button>
+          </div>
+          <div id="box-service1">
+            <img src="consulenzainf.jpg" id="consinf" />
+            <button type="button" id="btn-1">SCOPRI DI PIU'</button>
+          </div>
+          <div id="box-service1">
+            <img src="consulenzainf.jpg" id="consinf" />
+            <button type="button" id="btn-1">SCOPRI DI PIU'</button>
+          </div>
+          <div id="box-service1">
+            <img src="consulenzainf.jpg" id="consinf" />
+            <button type="button" id="btn-1">SCOPRI DI PIU'</button>
+          </div>
+          <div id="box-service1">
+            <img src="consulenzainf.jpg" id="consinf" />
+            <button type="button" id="btn-1">SCOPRI DI PIU'</button>
+          </div>
+          <div id="box-service1">
+            <img src="consulenzainf.jpg" id="consinf" />
+            <button type="button" id="btn-1">SCOPRI DI PIU'</button>
+          </div>
         </div>
       </div>
 
-      <div id="about"></div>
+      <div id="about">
+        <p>
+          La nostra azienda nasce nel 2023, abbiamo l'obiettivo di fornire
+          soluzioni di vario tipo in ambito IT
+        </p>
+      </div>
 
-      <div id="info"></div>
+      <div id="info">
+        <div id="infoutili">
+          <p>
+            Ci trovate a Palermo in via Mario Rossi, 29/A. Siamo aperti dalle
+            09:00 alle 17:00
+          </p>
+        </div>
+
+        <iframe
+          id="map"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d392.3795085981699!2d13.363994144392887!3d38.116095271539145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sit!2sit!4v1702751491644!5m2!1sit!2sit"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </div>
 
     <script src="script.js"></script>
